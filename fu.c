@@ -60,7 +60,7 @@ void SListPushBuck(SLTNode** pphead, SLTDateType x)//注意是二级指针！
 
 void SListPushFront(SLTNode** pphead, SLTDateType x)
 {
-	asssert(pphead);
+	assert(pphead);
 
 	SLTNode* newnode = BuyListNode(x);
 

@@ -13,10 +13,12 @@ void TestSList1()
 	SListPushBuck(&plist, 4);
 
 	SListPushFront(&plist, 9);
-
+	SListPrint(plist);
+	//printf('\n');
+	plist = SlistFind(plist, 2);
 	SListPrint(plist);
 
-
+	SListDestory(&plist);
 }
 
 void TestSList2()
@@ -46,7 +48,7 @@ void TestSList2()
 
 int main()
 {
-	//TestSList1();
-	TestSList2();
+	TestSList1();
+	//TestSList2();
 	return 0;
 }
